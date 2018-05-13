@@ -1,0 +1,27 @@
+.search-result-text {
+    .x-form-item-label-default {
+        color: cyan;
+        font-weight: bold;
+    }
+    
+}
+
+.search-form-container {
+    padding-left: 130px !important;
+    padding-right: 130px !important;
+    padding-top: 8px;
+    min-height: 60px;
+    
+}
+
+.search-input-field {
+    .x-form-trigger-wrap-default {
+        border: none;
+        border-bottom: 1.5px solid #FFFFFF;
+    }
+    input {
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+    
+}

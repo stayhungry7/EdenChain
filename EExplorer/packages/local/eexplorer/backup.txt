@@ -1,0 +1,3 @@
+Base Color: #5FA2DD
+Body Background: #FFFFFF
+Font: Open Sans 13px #BFBFBF 300

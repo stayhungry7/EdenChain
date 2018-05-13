@@ -1,0 +1,260 @@
+/**
+ * General
+ */
+@font-face {
+    font-family: AkzidenzGrotesk;
+    src: url(fonts/berthold_akzidenz_grotesk_be_regular.otf);
+}
+
+h1 {
+    font-family: AkzidenzGrotesk;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.custom-chart-style .x-title-text {
+    position: relative;
+    color: #FFF;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 15px 15px 15px !important;
+    
+}
+
+.custom-chart-style .x-title-text:after {
+    content: attr(data-content);
+    position: absolute;
+    color: #000;
+    top: 44%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    background-color: #9B9B9B;
+}
+
+.has-transparent-background {
+    background: transparent !important;
+    .x-panel-body-default,
+    .x-toolbar-default,
+    .x-panel-header-default {
+        background: transparent !important;    
+    }
+}
+
+.has-gradient-transparent-background {
+    background-image: url(images/gradient-background.png);
+    background-repeat: repeat-x;
+    .x-panel-body-default,
+    .x-toolbar-default,
+    .x-panel-header-default {
+        background: transparent !important;    
+    }
+}
+
+.docked-toolbar-footer.x-toolbar-footer {
+    background-color: #2A2A2A;    
+    .label-text {
+        h3 {
+            margin: 0px;
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 18px;
+            span {
+                margin-right: 25px;
+                color: #9B9B9B;
+                font-weight: bold;
+                font-size: 36px;
+            }
+        }         
+    }
+    .action-button {
+        background: transparent;
+        border: none;                
+        .x-btn-inner-default-small {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 14px;        
+        }
+    }
+}
+
+/**
+ * Transparent Grid
+ */
+.transparent-grid {
+    .x-column-header,
+    .x-grid-header-ct {
+        background-color: transparent;
+        border: none;
+        border-color: transparent;
+        color: #FFFFFF;
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .x-grid-body {
+        background-color: transparent;
+        border: none;
+        border-color: transparent;
+        padding-top: 10px;
+        padding-bottom: 10px;
+            
+        .x-grid-item-selected + .x-grid-item,
+        .x-grid-item,
+        .x-grid-item.x-grid-item-over,
+        .x-grid-item.x-grid-item-selected,
+        .x-grid-item-over + .x-grid-item {
+            background-color: transparent;
+            border: none;
+            border-color: transparent;
+            color: #FFFFFF;
+        }
+        .x-grid-item.x-grid-item-over {
+            background-color: gray;
+            color: cyan;
+        }
+        .x-grid-item {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+    }    
+}
+
+.listing-container {
+    margin-bottom: 70px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+
+
+.search-icon-btn.x-btn-default-toolbar-small {
+    background: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    
+    .x-btn-icon-el {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+        font-weight: normal;
+    }    
+}
+
+.form-block-header {
+    margin-bottom: 20px;
+    .x-form-text-default {
+        padding-left: 0px;
+    }
+    .x-form-trigger-wrap-default {
+        border-color: transparent; 
+    }
+    .x-form-trigger-wrap-default.x-form-trigger-wrap-focus {
+        border-color: transparent; 
+    }
+    .x-form-item-label-text {
+        font-size: 16px;
+        color: #FFF;
+        font-weight: bold;
+    }
+    .x-btn-icon-el-default-small {
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+        font-weight: normal;
+        color: cyan;
+    }
+}
+
+
+.detail-content-container {
+    margin-bottom: 50px;
+    .custom-chart-style {
+        padding-top: 25px;
+        padding-right: 20px;
+    }
+    .form-detail-style,
+    .grid-detail-style {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        
+        .x-panel-header-default-horizontal.x-header-noborder {
+            padding: 0px;
+            
+            .x-title-text {
+                margin-bottom: 8px;
+                color: #FFFFFF;
+                font-size: 30px;    
+                display: inline-block;
+                padding-bottom: 5px;
+                border-bottom: 5px solid cyan;
+                line-height: 30px;
+            }
+        }
+    }
+    .grid-detail-style.purple-decoration,
+    .form-detail-style.purple-decoration {
+        .x-panel-header-default-horizontal.x-header-noborder {            
+            .x-title-text {
+                border-bottom: 5px solid #A110E0;
+            }
+        }
+    }
+
+    .block-detail-style {
+        input {
+            color: cyan;
+        }
+    }
+    
+    .form-detail-style {
+        .x-form-item-label-text {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .x-form-trigger-wrap-default,
+        .x-form-trigger-wrap-default.x-form-trigger-wrap-focus {
+            border-color: transparent;
+        }
+    }
+    
+    
+    .accordion-panel-detail {
+        .x-panel-header-default-vertical {
+            border-left: 1px solid gray !important;
+        }
+        .x-title-text {
+            font-size: 25px;
+        }
+        .x-tool-expand-right,
+        .x-tool-collapse-left,
+        .x-tool-expand-left,
+        .x-tool-collapse-right {
+            font-size: 25px;
+            width: 25px;
+            height: 25px;
+            color: #FFFFFF;  
+        }
+    }
+}
+
+.transparent-grid .x-grid-body,
+.x-grid-view,
+.x-grid-item-container {
+    min-height: 100px !important;
+/*    height: 100px !important;*/
+}
+
+.listing-content-container {
+    .x-mask {
+        background-color: transparent !important;
+    }
+}

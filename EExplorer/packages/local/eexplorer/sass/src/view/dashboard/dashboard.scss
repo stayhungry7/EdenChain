@@ -1,0 +1,75 @@
+#dashboard-container {
+    padding-left: 80px;
+    padding-right: 80px !important;     
+}
+
+.search-toolbar-dashboard {
+    padding-top: 30px;
+}
+    
+.newest-transactions-dashboard {
+    background: #525252;
+    border-radius: 15px;
+    border-color: #525252;
+    margin-bottom: 30px;
+    .x-panel-header-default,
+    .x-grid-header-ct,
+    .x-column-header {
+        background: #525252;    
+        border: none;
+        color: cyan;
+    }
+
+    .x-grid-with-row-lines {
+        .x-grid-body {
+            border: none;
+        }
+        .x-grid-item {
+            background: #525252;
+            border: none;
+            color: cyan;
+            &.x-grid-item-selected {
+                background: gray;
+            }
+            &.x-grid-item-over {
+                background: gray;
+            }
+        }
+    }
+    .x-column-header {
+        color: #FFFFFF;
+    }
+    
+}
+
+.left-container-dashboard {
+    padding-right: 30px;
+}
+
+.number-box-dashboard {
+    .info-card-item {
+        padding: 25px 10px !important;
+        background: transparent;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.46);
+        margin-right: 30px;
+        margin-left: 30px;
+        h2 {
+            color: #08f2f8;
+            font-size: 48px;
+            font-weight: lighter;
+            line-height: 48px;
+            padding-bottom: 5px;
+        }
+        div {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        &:hover {
+            box-shadow: 0 0 35px rgba(255, 255, 255, 1);
+            background: rgba(255, 255, 255, 0.46);
+        }
+    }
+    
+}
