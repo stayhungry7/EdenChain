@@ -52,8 +52,6 @@ from subscription.sub_subscription import *
 
 
 LOGGER = logging.getLogger(__name__)
-DISTRIBUTION_NAME = 'sawtooth-rest-api'
-
 
 class APIServer:
     def __init__(self):
